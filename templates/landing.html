@@ -1,0 +1,26 @@
+{% extends "index.html" %}
+
+{% block content %}
+
+<nav>
+    <div class="logo-div">
+        <img src="static/images/ccs_logo.png" alt="CCS Logo">
+        <p>CCS Sit-In Monitoring System</p>
+    </div>
+
+    <ul>
+        <li><a href='/login'>Login</a></li>
+        <li class='register-btn'><a href='/register'>Register</a></li>
+    </ul>
+</nav>
+
+<div class="landing-div">
+    <h1 style="font-weight: 300; font-size: 3.2rem; text-align: center;">Welcome to CCS <br> Sit-In Monitoring System</h1>
+    <p style="font-size: 1.2rem; margin-top: 1rem;">Monitor student sit-ins, track lab usage, and manage sessions efficiently.</p>
+    <div class='landing-features-container'>
+        <div class='landing-features'></div>
+        <div class='landing-features'></div>
+        <div class='landing-features'></div>
+    </div>
+<div>
+{% endblock %}

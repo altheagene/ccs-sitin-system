@@ -1,0 +1,350 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100dvh;
+    font-family: 'Google Sans', sans-serif;
+}
+
+.log-reg-container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.side-1{
+    background-color: lightpink;
+    flex: 1.2;
+    background-image: url('images/comp_lab.jpg');
+    /* background-color: #85409D; */
+
+    background-size: cover;
+    position: relative;
+}
+
+.side-1-content{
+    width: 100%;
+    height: 100%;
+    background-color: #333333c5;
+    /* background: linear-gradient(130deg,rgba(255, 244, 176, 0.514) 0%, rgba(135, 61, 159, 0.464) 45%, rgba(21, 23, 61, 0.651) 95%); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.side-2{
+    flex:1.8;
+    position: relative;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+/* -- div containing the forms for login and registration */
+.login-reg-div{
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.login-reg-div h2{
+    font-size: 1.8rem
+}
+
+.login-reg-div form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}   
+
+.login-reg-div input{
+    width: 100%;
+    height: 45px;
+    border-radius: 20px;
+    margin-top: 0.5rem;
+    border: 1px solid rgba(128, 128, 128, 0.638);
+    padding: 0.5rem 1rem;
+}
+
+.form-header{
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.login-reg-div input:focus{
+
+    border-color: #7b2cbf;
+    box-shadow: 0 0 0 3px rgba(123, 44, 191, 0.15);
+    outline: none;
+}
+
+
+.login-reg-div button{
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+}
+
+.error-msg{
+    height: 20px;
+}
+
+button{
+    cursor: pointer;
+    margin-bottom: 2rem;
+    border: 1px solid white;
+    font-family: 'Google Sans', sans-serif;
+    font-size: 1rem;
+    transition: transform 0.2s ease;
+}
+
+/* ============================= BUTTONS STYLING========================= */
+button:hover {
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.buttons-div{
+    margin-top: 1.5rem;
+}
+
+.current-btn{
+    background-color: #85409D;
+    color: white;
+    border: 1px solid  rgb(20, 20, 20);
+}
+
+.non-current-btn{
+    background-color: #333;
+    color: white;
+    border: 1px solid  rgb(20, 20, 20);
+}
+
+.login-reg-nav-div{
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    height: 60px;
+    margin-bottom: 2rem;
+}
+
+.log-reg-container a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.5rem;
+    
+}
+
+.active{
+    border-bottom: 5px solid purple;
+    color: black;
+}
+
+.fade{
+    color: rgba(0, 0, 0, 0.401)
+}
+
+.close-form-btn{
+    height: 40px;
+    width: 40px;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(210, 207, 207, 0.396);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+}
+
+.close-btn:hover {
+    background-color: rgb(235, 235, 235);
+    border-radius: 20px;
+    height: 40px;
+    width: 40px;
+}
+
+img{
+    width: auto;
+    height: 40px;
+}
+
+.logo-div{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+nav{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+nav ul{
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+nav li{
+    padding: 0.5rem 1rem;
+    color: black;
+}
+
+nav a{
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.landing-features-container{
+    display: flex;
+    gap: 2rem;
+    margin-top: 3rem;
+    padding: 0 2rem;
+
+}
+
+.landing-features{
+    height: 300px;
+    flex: 1;
+    background-color: #ffb6b6;
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+.register-btn{
+    background-color: #85409D;
+    border-radius: 10px;
+    color: white;   
+    width: 130px;
+    text-align: center;
+}
+
+.register-btn a{
+    color: white;
+}
+
+
+.landing-div{
+    padding: 2rem;
+    height: calc(100dvh - 70px);
+    text-align: center;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem; */
+}
+
+.register-wrapper, .login-wrapper{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(238, 238, 238);
+}
+
+.register-container{
+    width: 100%;
+    height: 100%;
+    max-height: 700px;
+    max-width: 900px;
+    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.register-container form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}   
+
+.register-container input{
+    width: 100%;
+    height: 45px;
+    border-radius: 20px;
+    margin-top: 0.5rem;
+    border: 1px solid rgba(128, 128, 128, 0.638);
+}
+.register-form-div{
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem   ;
+}
+
+.login-container{
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    max-height: 500px;
+    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}   
+
+.login-container input{
+    width: 100%;
+    height: 45px;
+    border-radius: 20px;
+    margin-top: 0.5rem;
+    border: 1px solid rgba(128, 128, 128, 0.638)
+}
+
+.login-form-div h2{
+    text-align: center;
+}
+
+.login-form-div{
+    width: 80%;
+    margin: auto;
+}
+
+@media (max-width: 768px){
+
+    .side-1{
+        display: none;
+    }
+
+    .landing-features-container{
+        flex-direction: column;
+    }
+}

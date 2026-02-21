@@ -1,0 +1,53 @@
+{% extends 'index.html' %}
+
+{% block content %}
+<div class="log-reg-container">
+     <div class="side-1">
+        <div class='side-1-content' ></div>
+    </div>
+    <div class="side-2">
+        <a href='/' class='close-form-btn'><i class='bi bi-x-lg'></i></a>
+        
+        <div class="login-reg-div">
+            <div class='login-reg-nav-div'>
+                <a href='/login' class='fade'>Login</a>
+                <a href='/register' class='active'>Register</a>
+            </div>
+            <div class="form-header">
+                <h2> Create an account! </h2>
+                <p>Register to request and manage your sit-in sessions easily.</p>
+            </div>
+            <div>
+
+                <form>
+                    <div>
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname">
+                        <div class='error-msg'></div>
+                    </div>  
+                    
+                    <div>
+                        <label for="lname">Last Name</label>
+                        <div>
+                            <input type="lname">
+                            <div class='error-msg'></div>
+                            <div></div>
+                        <div>
+                    </div>
+                    
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="text" id="email">
+                        <div class='error-msg'></div>
+                    </div>
+
+                    <div  class='buttons-div'>
+                        <button type='button' class="current-btn">Sign Up</button>
+                        <button type='button'class="non-current-btn">Log In</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>  
+{% endblock %}
